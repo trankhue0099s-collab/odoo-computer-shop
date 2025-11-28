@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_order_form_inherit_warranty" model="ir.ui.view">
+            <field name="name">sale.order.line.warranty</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/tree//field[@name='name']" position="after">
+                    <field name="bao_hanh"/>
+                    <field name="han_bao_hanh"/>
+                    <field name="warranty_status" 
+                           widget="badge" 
+                           decoration-success="warranty_status == 'valid'" 
+                           decoration-danger="warranty_status == 'expired'"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+    <data>
+        <record id="view_computer_warranty_graph" model="ir.ui.view">
+            <field name="name">computer.warranty.graph</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <graph string="Phân tích Bảo hành" type="bar" sample="1">
+                    <field name="product_id" type="row"/>
+                    <field name="warranty_status" type="col"/>
+                    <field name="price_subtotal" type="measure"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="view_computer_warranty_pivot" model="ir.ui.view">
+            <field name="name">computer.warranty.pivot</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <pivot string="Phân tích Doanh thu" sample="1">
+                    <field name="product_id" type="row"/>
+                    <field name="warranty_status" type="col"/>
+                    <field name="price_subtotal" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record id="action_computer_warranty_report" model="ir.actions.act_window">
+            <field name="name">Báo cáo Máy tính &amp; Bảo hành</field>
+            <field name="res_model">sale.order.line</field>
+            <field name="view_mode">graph,pivot,tree,form</field>
+            <field name="domain">[('product_template_id.pro_cpu', '!=', False)]</field>
+            <field name="context">{'search_default_warranty_status': 1}</field>
+        </record>
+
+        <menuitem id="menu_computer_warranty_report"
+                  name="Phân tích Máy tính"
+                  parent="sale.menu_sale_report"
+                  action="action_computer_warranty_report"
+                  sequence="100"/>
+    </data>
+</odoo>

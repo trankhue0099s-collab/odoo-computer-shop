@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="report_sale_order_document_inherit_computer" model="ir.ui.view">
+            <field name="name">report.sale.order.document.inherit.computer</field>
+            <field name="inherit_id" ref="sale.report_saleorder_document"/>
+            
+            <field name="arch" type="xml">
+                <xpath expr="//td[@name='td_name']" position="inside">
+                    
+                    <t t-if="line.product_template_id.pro_cpu">
+                        <br/>
+                        <div style="font-size: 12px; color: #555; margin-top: 5px; padding-left: 10px; border-left: 3px solid #ccc;">
+                            <div>• <b>CPU:</b> <span t-field="line.product_template_id.pro_cpu"/></div>
+                            <div>• <b>RAM:</b> <span t-field="line.product_template_id.pro_ram"/></div>
+                            <div>• <b>HDD:</b> <span t-field="line.product_template_id.pro_hdd"/></div>
+                        </div>
+                    </t>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

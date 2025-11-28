@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_computer_software_tree" model="ir.ui.view">
+            <field name="name">computer.software.tree</field>
+            <field name="model">computer.software</field>
+            <field name="arch" type="xml">
+                <tree string="Danh sách Phần mềm">
+                    <field name="name"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_computer_software_form" model="ir.ui.view">
+            <field name="name">computer.software.form</field>
+            <field name="model">computer.software</field>
+            <field name="arch" type="xml">
+                <form string="Thông tin Phần mềm">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="action_view_products"
+                                    type="object"
+                                    class="oe_stat_button"
+                                    icon="fa-laptop">
+                                <field name="product_count" widget="statinfo" string="Máy tính"/>
+                            </button>
+                        </div>
+
+                        <div class="oe_title">
+                            <label for="name" string="Tên phần mềm"/>
+                            <h1>
+                                <field name="name" placeholder="Ví dụ: Windows 11 Pro"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="price"/>
+                        </group>
+                    </sheet>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_computer_software" model="ir.actions.act_window">
+            <field name="name">Phần mềm</field>
+            <field name="res_model">computer.software</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_computer_software"
+                  name="Phần mềm Máy tính"
+                  parent="sale.menu_sale_config"
+                  action="action_computer_software"
+                  sequence="10"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="product_template_form_inherit_computer" model="ir.ui.view">
+            <field name="name">product.template.form.inherit.computer</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <group string="Cấu hình Máy tính">
+                        <group>
+                            <field name="pro_cpu" placeholder="Ví dụ: Core i5 12400F"/>
+                            <field name="pro_ram"/>
+                        </group>
+                        <group>
+                            <field name="pro_hdd" placeholder="Ví dụ: SSD 512GB NVMe"/>
+                            <field name="software_ids" widget="many2many_tags" placeholder="Chọn phần mềm cài sẵn..."/>
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_template_search_view_inherit_computer" model="ir.ui.view">
+            <field name="name">product.template.search.inherit.computer</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_search_view"/>
+            
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="pro_cpu" string="Tìm theo CPU"/>
+                    <field name="pro_ram" string="Tìm theo RAM"/>
+                </xpath>
+
+                <xpath expr="//filter[@name='services']" position="after">
+                    <separator/>
+                    <filter string="Máy cấu hình Khủng (16GB+)" name="high_ram" domain="[('pro_ram', 'in', ['16gb', '32gb'])]"/>
+                    <filter string="Máy văn phòng (4GB)" name="low_ram" domain="[('pro_ram', '=', '4gb')]"/>
+                </xpath>
+
+                <xpath expr="//group" position="inside">
+                    <filter string="Nhóm theo RAM" name="group_by_ram" context="{'group_by':'pro_ram'}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_template_kanban_view_inherit_computer" model="ir.ui.view">
+            <field name="name">product.template.kanban.inherit.computer</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_kanban_view"/>
+            
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='product_lst_price']" position="after">
+                    
+                    <div t-if="record.pro_cpu.raw_value or record.pro_ram.raw_value" style="margin-top: 7px;">
+                        
+                        <span t-if="record.pro_cpu.raw_value" 
+                              style="background-color: #e3f2fd; color: #1565c0; padding: 3px 8px; border-radius: 10px; font-size: 11px; margin-right: 5px; border: 1px solid #90caf9; font-weight: bold;">
+                            <i class="fa fa-microchip" style="margin-right: 3px;"></i>
+                            <field name="pro_cpu"/>
+                        </span>
+
+                        <span t-if="record.pro_ram.raw_value" 
+                              style="background-color: #fff3e0; color: #ef6c00; padding: 3px 8px; border-radius: 10px; font-size: 11px; border: 1px solid #ffcc80; font-weight: bold;">
+                            <i class="fa fa-database" style="margin-right: 3px;"></i>
+                            <field name="pro_ram"/>
+                        </span>
+
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

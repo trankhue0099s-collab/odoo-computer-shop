@@ -1,0 +1,491 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* computer_shop
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 12:27+0000\n"
+"PO-Revision-Date: 2025-11-28 12:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: computer_shop
+#: model:ir.model.fields.selection,name:computer_shop.selection__product_template__pro_ram__16gb
+msgid "16 GB"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields.selection,name:computer_shop.selection__product_template__pro_ram__32gb
+msgid "32 GB"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields.selection,name:computer_shop.selection__product_template__pro_ram__4gb
+msgid "4 GB"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields.selection,name:computer_shop.selection__product_template__pro_ram__8gb
+msgid "8 GB"
+msgstr ""
+
+#. module: computer_shop
+#: model:mail.template,body_html:computer_shop.email_template_warranty_expired
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Chào bạn <strong><t t-out=\"object.partner_id.name\"></t></strong>,\n"
+"                        <br><br>\n"
+"                        Hệ thống thông báo đơn hàng <strong><t t-out=\"object.name\"></t></strong> của bạn đã hết hạn bảo hành.\n"
+"                        <br>\n"
+"                        Ngày mua: <t t-out=\"object.date_order\"></t>\n"
+"                        <br><br>\n"
+"                        Vui lòng liên hệ cửa hàng nếu bạn muốn gia hạn thêm gói bảo hành VIP!\n"
+"                        <br>\n"
+"                        Xin cảm ơn,\n"
+"                        <br>\n"
+"                        <em>Computer Shop Team</em>\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.actions.act_window,name:computer_shop.action_computer_warranty_report
+msgid "Báo cáo Máy tính & Bảo hành"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_sale_order_line__bao_hanh
+msgid "Bảo hành (Tháng)"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_product_product__pro_ram
+#: model:ir.model.fields,field_description:computer_shop.field_product_template__pro_ram
+msgid "Bộ nhớ (RAM)"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_form_inherit_computer
+msgid "Chọn phần mềm cài sẵn..."
+msgstr ""
+
+#. module: computer_shop
+#: model:mail.template,name:computer_shop.email_template_warranty_expired
+msgid "Computer Shop: Thông báo Hết hạn BH"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.actions.server,name:computer_shop.ir_cron_check_warranty_ir_actions_server
+msgid "Computer: Tự động kiểm tra Bảo hành"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__create_uid
+#: model:ir.model.fields,field_description:computer_shop.field_computer_update_price_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__create_date
+#: model:ir.model.fields,field_description:computer_shop.field_computer_update_price_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields.selection,name:computer_shop.selection__sale_order_line__warranty_status__valid
+msgid "Còn bảo hành"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_form_inherit_computer
+msgid "Cấu hình Máy tính"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.ui.menu,name:computer_shop.menu_computer_update_price
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_update_price_wizard_form
+msgid "Cập nhật giá"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.actions.act_window,name:computer_shop.action_computer_update_price
+#: model:ir.model,name:computer_shop.model_computer_update_price_wizard
+msgid "Cập nhật giá hàng loạt"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_update_price_wizard_form
+msgid "Cập nhật ngay"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_software_tree
+msgid "Danh sách Phần mềm"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__display_name
+#: model:ir.model.fields,field_description:computer_shop.field_computer_update_price_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__price
+msgid "Giá bản quyền"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields.selection,name:computer_shop.selection__sale_order_line__warranty_status__expired
+msgid "Hết hạn"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_sale_order_line__han_bao_hanh
+msgid "Hết hạn BH"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_update_price_wizard_form
+msgid "Hủy bỏ"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__id
+#: model:ir.model.fields,field_description:computer_shop.field_computer_update_price_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__message_has_error
+#: model:ir.model.fields,help:computer_shop.field_computer_software__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__write_uid
+#: model:ir.model.fields,field_description:computer_shop.field_computer_update_price_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__write_date
+#: model:ir.model.fields,field_description:computer_shop.field_computer_update_price_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_search_view_inherit_computer
+msgid "Máy cấu hình Khủng (16GB+)"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_software_form
+msgid "Máy tính"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_search_view_inherit_computer
+msgid "Máy văn phòng (4GB)"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_search_view_inherit_computer
+msgid "Nhóm theo RAM"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_warranty_graph
+msgid "Phân tích Bảo hành"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_warranty_pivot
+msgid "Phân tích Doanh thu"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.ui.menu,name:computer_shop.menu_computer_warranty_report
+msgid "Phân tích Máy tính"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.actions.act_window,name:computer_shop.action_computer_software
+msgid "Phần mềm"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model,name:computer_shop.model_computer_software
+#: model:ir.ui.menu,name:computer_shop.menu_computer_software
+msgid "Phần mềm Máy tính"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_product_product__software_ids
+#: model:ir.model.fields,field_description:computer_shop.field_product_template__software_ids
+msgid "Phần mềm cài sẵn"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_update_price_wizard__percent
+msgid "Phần trăm tăng giá (%)"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model,name:computer_shop.model_product_template
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: computer_shop
+#: model:res.groups,name:computer_shop.group_computer_manager
+msgid "Quản lý Cửa hàng Máy tính"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model,name:computer_shop.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Dòng đơn bán hàng"
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__product_count
+msgid "Số lượng máy"
+msgstr ""
+
+#. module: computer_shop
+#: model:mail.template,subject:computer_shop.email_template_warranty_expired
+msgid "Thông báo Hết hạn Bảo hành - Đơn hàng {{ object.name }}"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_software_form
+msgid "Thông tin Phần mềm"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_sale_order_line__warranty_status
+msgid "Trạng thái"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__name
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_software_form
+msgid "Tên phần mềm"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_search_view_inherit_computer
+msgid "Tìm theo CPU"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_search_view_inherit_computer
+msgid "Tìm theo RAM"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_product_product__pro_cpu
+#: model:ir.model.fields,field_description:computer_shop.field_product_template__pro_cpu
+msgid "Vi xử lý (CPU)"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_form_inherit_computer
+msgid "Ví dụ: Core i5 12400F"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.product_template_form_inherit_computer
+msgid "Ví dụ: SSD 512GB NVMe"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.view_computer_software_form
+msgid "Ví dụ: Windows 11 Pro"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_computer_software__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,help:computer_shop.field_computer_software__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: computer_shop
+#: model:ir.model.fields,field_description:computer_shop.field_product_product__pro_hdd
+#: model:ir.model.fields,field_description:computer_shop.field_product_template__pro_hdd
+msgid "Ổ cứng (HDD/SSD)"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.report_sale_order_document_inherit_computer
+msgid "• <b>CPU:</b>"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.report_sale_order_document_inherit_computer
+msgid "• <b>HDD:</b>"
+msgstr ""
+
+#. module: computer_shop
+#: model_terms:ir.ui.view,arch_db:computer_shop.report_sale_order_document_inherit_computer
+msgid "• <b>RAM:</b>"
+msgstr ""

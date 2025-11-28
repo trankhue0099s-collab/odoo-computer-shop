@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_computer_software,computer.software,model_computer_software,base.group_user,1,1,1,1
+access_computer_update_price_wizard,computer.update.price.wizard,model_computer_update_price_wizard,base.group_user,1,1,1,1
