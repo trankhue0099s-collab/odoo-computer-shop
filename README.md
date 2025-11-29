@@ -32,6 +32,15 @@ Dự án không chỉ dừng lại ở việc quản lý thông tin đơn thuầ
 * **Robot Bảo hành (Cron Job):** Hệ thống tự động quét đơn hàng mỗi đêm (12:00 PM).
 * **Email Marketing:** Tự động gửi email nhắc nhở khách hàng khi thiết bị hết hạn bảo hành.
 * **Smart Buttons:** Liên kết nhanh giữa Phần mềm (Software) - Sản phẩm - Tồn kho - Hóa đơn.
+  
+
+## 🛠 Công nghệ sử dụng (Tech Stack)
+
+* **Core Framework:** Odoo 17 (Community Edition).
+* **Languages:** Python, XML, QWeb, PostgreSQL.
+* **Modules:** Sales, Website, Inventory, Purchase, Invoicing, Mail.
+* **Tools:** VS Code, Git/GitHub.
+
 
 ---
 
@@ -44,6 +53,7 @@ graph LR
     B -->|Xuất kho| D[Giao hàng]
     C -->|Tạo Hóa đơn| E[Thu tiền & Hạch toán]
     C -->|Robot quét| F[Gửi Mail Bảo hành]
+
 
 
 
