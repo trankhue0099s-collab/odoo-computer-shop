@@ -48,11 +48,11 @@ Dự án không chỉ dừng lại ở việc quản lý thông tin đơn thuầ
 
 ```mermaid
 graph LR
-    A[Mua hàng NCC] -->|Nhập kho| B(Tăng Tồn Kho)
-    C[Khách đặt hàng] -->|Check Kho| B
-    B -->|Xuất kho| D[Giao hàng]
-    C -->|Tạo Hóa đơn| E[Thu tiền & Hạch toán]
-    C -->|Robot quét| F[Gửi Mail Bảo hành]
+    A["Mua hàng NCC"] -->|"Nhập kho"| B("Tăng Tồn Kho")
+    C["Khách đặt hàng"] -->|"Check Kho"| B
+    B -->|"Xuất kho"| D["Giao hàng"]
+    C -->|"Tạo Hóa đơn"| E["Thu tiền & Hạch toán"]
+    C -->|"Robot quét"| F["Gửi Mail Bảo hành"]
 
 
 
