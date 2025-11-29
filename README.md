@@ -34,10 +34,16 @@ Dự án không chỉ dừng lại ở việc quản lý thông tin đơn thuầ
 * **Smart Buttons:** Liên kết nhanh giữa Phần mềm (Software) - Sản phẩm - Tồn kho - Hóa đơn.
 
 ---
-## 🛠 Công nghệ sử dụng (Tech Stack)
 
-* **Core Framework:** Odoo 17 (Community Edition).
-* **Languages:** Python, XML, QWeb, PostgreSQL.
-* **Modules:** Sales, Website, Inventory, Purchase, Invoicing, Mail.
-* **Tools:** VS Code, Git/GitHub.
+## 🔄 Luồng nghiệp vụ (Business Workflow)
+
+```mermaid
+graph LR
+    A[Mua hàng NCC] -->|Nhập kho| B(Tăng Tồn Kho)
+    C[Khách đặt hàng] -->|Check Kho| B
+    B -->|Xuất kho| D[Giao hàng]
+    C -->|Tạo Hóa đơn| E[Thu tiền & Hạch toán]
+    C -->|Robot quét| F[Gửi Mail Bảo hành]
+
+
 
